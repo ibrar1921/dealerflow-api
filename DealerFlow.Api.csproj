@@ -7,4 +7,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
   </ItemGroup>
+  <ItemGroup>
+    <!-- Keep xUnit test sources out of the web API assembly. -->
+    <Compile Remove="tests/**/*.cs" />
+  </ItemGroup>
 </Project>
